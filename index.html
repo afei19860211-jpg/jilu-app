@@ -6,10 +6,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>肌录 · 测试版</title>
-  <script type="module" crossorigin src="/jilu-app/assets/index-C7lC464u.js"></script>
+  <script type="module" crossorigin src="/jilu-app/assets/index-el4tselC.js"></script>
   <link rel="stylesheet" crossorigin href="/jilu-app/assets/index-hpsCcXxD.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <!-- 挂载前占位（慢网下 200KB 数据包下载期间可见；Vue 挂载后整体被替换） -->
+    <div style="position:fixed;inset:0;background:#0B1220;color:#8FA0B8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-family:-apple-system,'PingFang SC',sans-serif">
+      <div style="font-size:22px;font-weight:800;color:#F2F5FA">肌录</div>
+      <div style="font-size:12px">动作库装载中…（首开约 300KB，之后走缓存）</div>
+    </div>
+  </div>
 </body>
 </html>
